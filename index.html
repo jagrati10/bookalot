@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+
+</head>
+
+<body>
+    <div class="main">
+        <center>
+            <h1>Book Appointment</h1>
+        </center>
+        <br>
+        <p>Fill the form below and we will get back soon to you for more updates</p>
+
+        <div class="form">
+            <form class="personal-details" action="" method="post">
+                <table>
+                    <tr>
+                        <td><label>Full Name</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Full Name" name="name" id="name" required minlength="3" pattern="[aA-zZ]{1,15}"
+                            title="Username should only contain letters" />
+                        </td>
+                    </tr>
+
+                    <br>
+
+                    <tr>
+                        <td><label>Gender</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="gender" required>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <br>
+
+                    <tr>
+                        <td>
+                            <label>Age</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Age" name="age" id="name" required min="1" max="90" /><br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Phone Number</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="10 digit phone Number" name="phno" id="name"  required minlength="10" pattern="^\d{3}-\d{3}-\d{4}$"  title="10 digit phone number" required />
+                        </td>
+                    </tr>
+                    <br>
+
+                    <tr>
+                        <td>
+                            <label>Address</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Enter Full Address" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>City</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Enter City" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>State</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Enter State" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Zip Code</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Enter Zip Code" required pattern="^[0-9]{6}$"
+                                title="Enter Valid Pin Code" />
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>
+                            <label>Have you previously attended our facility?</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="newp" id="yes" value="Yes" required>
+                            &nbsp;
+                             <span id="yes">Yes</span>
+                            &nbsp; &nbsp; &nbsp; &nbsp;
+                              <input type="radio" name="newp" id="no" value="No" required>
+                            &nbsp;
+                             <span id="no">No</span>
+
+
+                             
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <lable>If Yes, state on which condition and when?</lable>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="write here.." id="reason" required /><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Appointment Book Slot</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <input type="datetime-local" min="2022-02-01" max="2022-12-31" required> <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="submit" value="submit" name="submit" id="submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>
